@@ -1,0 +1,129 @@
+#message-container {
+    background-color: #ffe6e6;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#message-container h1 {
+    color: #ff66b2;
+    font-size: 40px;
+    font-family: 'Cursive', sans-serif;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#grid {
+    display: grid;
+    gap: 5px;
+    margin: 20px 0;
+    user-select: none;
+}
+
+.grid-cell {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.grid-cell.selected {
+    background-color: #b3e0ff;
+}
+
+.grid-cell.found {
+    background-color: #90EE90;
+}
+
+#word-list {
+    margin-top: 20px;
+}
+
+#words-to-find {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.word-item {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.word-item.found {
+    text-decoration: line-through;
+    color: #4CAF50;
+    background-color: #e8f5e9;
+}
+
+#new-game-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#new-game-button:hover {
+    background-color: #ff4da6;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    font-family: monospace;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.high-score {
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+}
